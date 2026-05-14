@@ -48,6 +48,11 @@ on:
   push:
     branches: [ "main" ]
   pull_request:
+  workflow_dispatch:
+    inputs:
+      confirm:
+        description: "Type DESTROY to delete infrastructure"
+        required: true
 
 permissions:
   contents: read
