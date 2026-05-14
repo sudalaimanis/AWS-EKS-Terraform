@@ -93,5 +93,5 @@ jobs:
       run: terraform apply -auto-approve -input=false
 
     - name: Terraform Destroy
-      if: github.event_name == 'workflow_dispatch' && github.event.inputs.confirm == "Destory"
+      if: github.event_name == 'workflow_dispatch' && github.event.inputs.confirm == "DESTROY"
       run: terraform destroy --auto-approve -input=false
