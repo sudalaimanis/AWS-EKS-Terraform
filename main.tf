@@ -12,7 +12,7 @@ module "vpc" {
 }
 
 ################################################################################
-# Security Groups Module - Network Access Control
+# Security Groups Module - Network Access Control 
 ################################################################################
 # Creates security groups for EKS cluster and worker nodes
 # Manages ingress/egress rules for cluster communication
